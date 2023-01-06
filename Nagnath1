@@ -1,0 +1,24 @@
+package BasicMaven;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ParallelExecution1 {
+	@Test
+	public void facebook() {
+		WebDriver driver=new ChromeDriver();
+		driver.get("https://www.facebook.com/login/");
+		
+		
+	}
+	@Test
+	public void amazon() {
+		{
+			WebDriver driver=new ChromeDriver();
+			driver.get("https://www.amazon.in/");
+		}
+	}
+	
+
+}
